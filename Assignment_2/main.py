@@ -1,5 +1,5 @@
 def maxSubArray(array):
-    maxSum = 0
+    maxSum = min(array)
     for startIndex in range(0, len(array)):
         contiguousSum = 0
         for element in range(startIndex, len(array)):
@@ -9,5 +9,5 @@ def maxSubArray(array):
     return maxSum
 
 
-nums = [5, 4, -1, 7, 8]
+nums = [-5, -4, -1, -7, -8]
 maxSubArray(nums)

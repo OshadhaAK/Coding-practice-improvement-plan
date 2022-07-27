@@ -11,6 +11,10 @@ class TestMain(unittest.TestCase):
             [1]), 1)
         self.assertEqual(main.maxSubArray(
             [5, 4, -1, 7, 8]), 23)
+        self.assertEqual(main.maxSubArray(
+            [-5, -4, -1, -7, -8]), -1)
+        self.assertEqual(main.maxSubArray(
+            [5, 4, 1, 7, 8]), 25)
 
 
 if __name__ == "__main__":
